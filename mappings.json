@@ -34,5 +34,24 @@
       { "from": "SSN",       "to": "[name='CustomerInformation.ConfirmSocialSecurityNumber']" },
       { "from": "DOB",       "to": "[name='CustomerInformation.BirthDate']", "type": "date" }
     ]
+  },
+  "sfc": {
+    "name": "SFC Portal",
+    "hostMatch": "portal.sfc.us",
+    "labelBased": true,
+    "fields": [
+      { "from": "FirstName", "label": "First Name" },
+      { "from": "LastName",  "label": "Last Name" },
+      { "from": "MiddleName","label": "Middle Name" },
+      { "from": "SSN",       "label": "SSN", "dataMask": "000-00-0000" },
+      { "from": "DOB",       "label": "Birth Date", "type": "date" },
+      { "from": "Address",   "label": "Address 1" },
+      { "from": "AptNo",     "label": "Address 2" },
+      { "from": "Zip",       "label": "Zip Code" },
+      { "from": "City",      "label": "City" },
+      { "from": "Email",     "label": "Email Address" },
+      { "from": "Email",     "label": "Verify Email Address" },
+      { "from": "CellPhone", "label": "Phone Number", "phoneType": "Mobile" }
+    ]
   }
 }
